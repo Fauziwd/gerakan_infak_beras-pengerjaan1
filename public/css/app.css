@@ -1,0 +1,184 @@
+/* app.css */
+
+/* Styles for sidebar */
+#sidebar {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    /* box-shadow: #2b2a4c76 10px 0px 30px 10px; */
+}
+
+#sidebar .card-header {
+    border-bottom: 1px solid #ffffff;
+}
+
+.card-header {
+    background: rgb(161,169,243);
+    background: linear-gradient(180deg, rgba(161,169,243,1) 0%, rgba(246,248,255,1) 100%);
+}
+
+.card-header1 {
+    width: auto;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgba(247, 245, 245, 0.833);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(50px); /* Untuk dukungan browser WebKit seperti Safari */
+    background-color: rgba(255, 255, 255, 0.285); /* Warna latar belakang transparan */
+    box-shadow: 2px 2px 15px rgba(63, 58, 58, 0.3);
+}
+
+/* .card:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0px 0px 20px 0px rgba(63, 58, 58, 0.712);
+  }  */
+
+.card-bottom .col-md-4 {
+    box-shadow: rgba(57, 54, 54, 0.379) 0px 0px 20px 0px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#sidebar .dropdown-menu {
+    width: 220px;
+    z-index: 9999;
+}
+
+div.dropdown-menu.show {
+    border-radius: 10px;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(50px); /* Untuk dukungan browser WebKit seperti Safari */
+    background-color: rgba(255, 255, 255, 0.285); /* Warna latar belakang transparan */
+    box-shadow: 0px 0px 20px 0px rgba(63, 58, 58, 0.3);
+}
+
+/* Styles for main content */
+#mainContent {
+    padding: 10px;
+}
+
+#mainContent .card-header {
+    background-color: #fff;
+    border-bottom: 1px solid #ffffff;
+}
+
+    /* SUP Info tabel data */
+    .keterangan {
+        position: relative;
+        cursor: pointer;
+        z-index: 9999;
+      }
+    
+      .keterangan:hover::before {
+        content: attr(title);
+        position: absolute;
+        top: -30px;
+        left: 0;
+        padding: 5px;
+        background-color: #fcf0f0;
+        color: red;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 2px 2px 15px rgba(63, 58, 58, 0.3);
+        font-size: 14px;
+        line-height: 1.2;
+        white-space: nowrap;
+      }
+
+      select#language {
+        background-color: rgb(218, 179, 179);
+        border-radius:10px;
+    }
+
+    #clock-container {
+      position: relative;
+      display: inline;
+    }
+
+    #clock {
+      background-color: rgb(0, 123, 255);
+      height: 5px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: rgba(43, 49, 103, 0.573) 0px 0px 20px 2px;
+      border-radius: 20px;
+    }
+    
+    /* @keyframes pulsate {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.2);
+        opacity: 0.3;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 0;
+      }
+    }
+     */
+    /* #ticker {
+      position: absolute;
+      right: 0;
+      width: 10px;
+      height: 10px;
+      background-color: rgb(140, 218, 116);
+      border-radius: 50%;
+      animation: pulsate 2s infinite;
+    } */
+    
+    #tooltip {
+      position: absolute;
+      top:  -17%;
+      left: 81%;
+      transform: translateX(-50%);
+      backdrop-filter: blur(40px);
+      -webkit-backdrop-filter: blur(55px); /* Untuk dukungan browser WebKit seperti Safari */
+      background-color: rgba(255, 255, 255, 0.285); /* Warna latar belakang transparan */
+      box-shadow: 2px 2px 15px rgba(77, 68, 210, 0.619);
+      color: rgb(21, 20, 20);
+      padding: 5px;
+      width: 106px;
+      border-radius: 5px;
+      font-weight: bold;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    
+    #clock-container:hover #tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+
+
+    
+    @keyframes pulsate {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.2);
+        opacity: 0.3;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 0;
+      }
+    }
+    
+    #ticker2 {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 10px;
+      height: 10px;
+      background-color: rgb(140, 218, 116);
+      border-radius: 50%;
+      animation: pulsate 2s infinite;
+    }
+    
+  
